@@ -34,7 +34,6 @@ void main() => runApp(const MyApp());
      ListNavigation(),
      Favorite(),
      onMap(),
-     Profile(),
    ];
    void _onItemTupped(int index){
      setState(() {
@@ -54,22 +53,17 @@ void main() => runApp(const MyApp());
            BottomNavigationBarItem(
                icon: Icon(Icons.format_list_numbered),
                label: 'LIST',
-             backgroundColor: Color.fromRGBO(0, 0, 139, 1),
+               backgroundColor: Color.fromRGBO(0, 0, 139, 1),
            ),
            BottomNavigationBarItem(
                icon: Icon(Icons.star),
-               label: 'FAVORITE',
+               label: 'FAVORITES',
              backgroundColor: Color.fromRGBO(184, 134, 11, 1),
            ),
            BottomNavigationBarItem(
                icon: Icon(Icons.map_outlined),
-               label: 'QR',
-             backgroundColor: Colors.black
-           ),
-           BottomNavigationBarItem(
-               icon: Icon(Icons.person_rounded),
-               label: 'PROFILE',
-             backgroundColor: Colors.red
+               label: 'MAP',
+               backgroundColor: Colors.black
            ),
          ],
        ),

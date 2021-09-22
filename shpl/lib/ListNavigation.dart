@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shpl/Drawer.dart';
 
 class ListNavigation extends StatelessWidget {
   const ListNavigation({Key? key}) : super(key: key);
@@ -9,8 +10,9 @@ class ListNavigation extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("List"),
-        backgroundColor: Color.fromRGBO(0, 0, 139, 1),
+        backgroundColor: Color.fromRGBO(194, 135, 153, 1),
       ),
+      drawer: DrawerNav(),
       body: Column(
         children: [
           Padding(padding: EdgeInsets.symmetric(vertical: 5)),
