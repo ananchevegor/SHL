@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:shpl/ListNavigation.dart';
+import 'package:shpl/Map.dart';
+import 'package:shpl/MapLocation.dart';
 import 'package:shpl/Profile.dart';
 
 import 'Favorite.dart';
-import 'Map.dart';
 
 void main() => runApp(const MyApp());
 
  class MyApp extends StatelessWidget {
    const MyApp({Key? key, items}) : super(key: key);
-
 
 
    @override
@@ -30,10 +30,12 @@ void main() => runApp(const MyApp());
  class _MyStatfulWidgetState extends State<MyStatfulWidget> {
    int currentIndex = 0;
 
-   static const List<Widget> _widgetOptions = <Widget>[
+   static List<Widget> _widgetOptions = <Widget>[
      ListNavigation(),
      Favorite(),
+     // ignore: unnecessary_const
      onMap(),
+
    ];
    void _onItemTupped(int index){
      setState(() {

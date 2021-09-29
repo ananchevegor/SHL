@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:shpl/favorite/favoriteService.dart';
 import 'Drawer.dart';
 
 class Favorite extends StatelessWidget {
@@ -13,6 +13,7 @@ class Favorite extends StatelessWidget {
         backgroundColor: Color.fromRGBO(194, 135, 153, 1),
       ),
       drawer: DrawerNav(),
+      body: FavoriteService(),
     );
   }
 }
